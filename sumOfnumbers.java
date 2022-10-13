@@ -14,11 +14,11 @@ public class sumOfnumbers {
         list.add((float) 10.7);
         list.add((float) 9.8);
         
-        
-        float sum=0;
-     for(float i:list)
-    	 sum+=i;
-     System.out.println("Sum="+sum);
-
+      Iterator<Float>itr=list.iterator();      
+        float sum=0f;
+        while(itr.hasNext()){            
+         sum+=itr.next();
 }
+        System.out.println(sum);
+	}
 }
